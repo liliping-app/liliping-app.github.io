@@ -11,23 +11,23 @@
     
 
     
-    <meta name="description" content="hello, every body !~">
+    <meta name="description" content="每日知识点vueVue.js有一个基础结构，它可以帮你把一个常规的对象转换成一个“被观察”的值，这个值就叫做“observable”。以下是一个实现响应式属性的例子 加载更多 123456789101112131415161718192021222324function defineReactive (obj, key, val) &amp;#123;  Object.defineProperty (ob">
 <meta property="og:type" content="website">
 <meta property="og:title" content="tags (或categories)">
 <meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="新欣独立博客">
-<meta property="og:description" content="hello, every body !~">
+<meta property="og:description" content="每日知识点vueVue.js有一个基础结构，它可以帮你把一个常规的对象转换成一个“被观察”的值，这个值就叫做“observable”。以下是一个实现响应式属性的例子 加载更多 123456789101112131415161718192021222324function defineReactive (obj, key, val) &amp;#123;  Object.defineProperty (ob">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-28T07:01:39.681Z">
+<meta property="og:updated_time" content="2018-03-28T09:53:57.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tags (或categories)">
-<meta name="twitter:description" content="hello, every body !~">
+<meta name="twitter:description" content="每日知识点vueVue.js有一个基础结构，它可以帮你把一个常规的对象转换成一个“被观察”的值，这个值就叫做“observable”。以下是一个实现响应式属性的例子 加载更多 123456789101112131415161718192021222324function defineReactive (obj, key, val) &amp;#123;  Object.defineProperty (ob">
 
     
     <link rel="alternative" href="/atom.xml" title="新欣独立博客" type="application/atom+xml">
     
     
-    <link rel="icon" href="/img/favicon.ico">
+    <link rel="icon" href="/img/scrollup.png">
     
     
     <link rel="apple-touch-icon" href="/img/jacman.jpg">
@@ -42,7 +42,7 @@
 <div>
 		
 			<div id="imglogo">
-				<a href="/"><img src="/img/logo.png" alt="新欣独立博客" title="新欣独立博客"/></a>
+				<a href="/"><img src="/img/shua.gif" alt="新欣独立博客" title="新欣独立博客"/></a>
 			</div>
 			
 			<div id="textlogo">
@@ -90,13 +90,15 @@
 		<a href="/about" title="Cocal Li" target="_blank" itemprop="author">Cocal Li</a>
 		
   <p class="article-time">
-    <time datetime="2018-03-28T07:01:47.951Z" itemprop="datePublished"> 发表于 2018-03-28</time>
+    <time datetime="2018-03-28T09:53:57.540Z" itemprop="datePublished"> 发表于 2018-03-28</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
-		  
+		<h1 id="每日知识点"><a href="#每日知识点" class="headerlink" title="每日知识点"></a>每日知识点</h1><h2 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h2><p>Vue.js有一个基础结构，它可以帮你把一个常规的对象转换成一个“被观察”的值，这个值就叫做“observable”。以下是一个实现响应式属性的例子</p>
+<p>加载更多</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">function defineReactive (obj, key, val) &#123;</span><br><span class="line">  Object.defineProperty (obj, key, &#123;</span><br><span class="line">	get: function () &#123;</span><br><span class="line">	  return val;</span><br><span class="line">	&#125;,</span><br><span class="line">	set: function (newValue) &#123;</span><br><span class="line">	  val = newValue;</span><br><span class="line">	&#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">// 创建对象</span><br><span class="line">var person = &#123;&#125;;</span><br><span class="line"></span><br><span class="line">// 添加两个响应式属性</span><br><span class="line">defineReactive (person, &apos;age&apos;, 25);</span><br><span class="line">defineReactive (person, &apos;country&apos;, &apos;Brazil&apos;);</span><br><span class="line"></span><br><span class="line">// 现在你可以使用这两个属性</span><br><span class="line">if (person.age &lt; 18) &#123;</span><br><span class="line">  return &apos;minor&apos;;</span><br><span class="line">&#125;</span><br><span class="line">else &#123;</span><br><span class="line">  return &apos;adult&apos;;</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
